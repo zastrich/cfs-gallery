@@ -1,0 +1,9 @@
+.cfs-gallery-base .cfs-gallery {background:#fff; padding:10px; margin:15px 0; border:dashed 3px #ccc; transition:all 0.3s ease-in-out; min-height:150px;}
+.cfs-gallery-base .cfs-gallery .base-img {position:relative; display:inline-block; width:10%; border:solid 5px #fff; padding-bottom:10%; background-size:cover; background-repeat:no-repeat; background-position:center center;}
+.cfs-gallery-base .cfs-gallery .base-img a {position:absolute; top:10px; right:10px; background:#fff; padding:2px 8px; font-size:11px; font-weight:700; color:red; display:none; text-decoration:none; border-radius:50%; transition:all 0.3s ease-in-out;}
+.cfs-gallery-base .cfs-gallery .base-img:hover a {display:block;}
+.cfs-gallery-base .cfs-gallery .base-img:hover a:hover {box-shadow:0 1px 3px rgba(0,0,0,.6);}
+.cfs-gallery-base .cfs-gallery .ui-sortable-helper {opacity:.5;}
+.cfs-gallery-base .cfs-gallery .ui-sortable-placeholder {background-color:#fffbe5;}
+.cfs-gallery-base .cfs-gallery.ui-sortable .base-img {cursor:move;}
+.cfs-gallery-base .cfs-gallery.recebe {background-color:#0085ba;}
