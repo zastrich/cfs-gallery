@@ -15,3 +15,17 @@ The CFS Gallery Add-on for [Custom Field Suite]
 * Upload the zip file into WordPress (Plugins > Add New > Upload)
 * Activate the plugin (CFS must also be active)
 
+## Example of Code to Display images on your theme
+```
+$Images = CFS()->get("gallery"); /* Return array of Image IDs */
+
+if(is_array($Images) && sizeof($Images) > 0)
+foreach($Images as $ImageID){
+    $Image = get_post($ImageID); /* Get properties of image post by ID */
+    ?>
+    <a href="<?=@array_shift(wp_get_attachment_image_src($ImageID, "full"))?>">
+        <img src="<?=@array_shift(wp_get_attachment_image_src($ImageID, "large"))?>" alt="<?=$Image->post_content?>">
+    </a>
+    <?php 
+}
+```
